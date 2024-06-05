@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>góc nhỏ của mlinhh</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Aptos:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="room1">
+    <h1 class="room-title">góc nhỏ của mlinhh</h1>
+    <div id="emotion-select">
+        <button onclick="selectEmotion('happy', 'room1')">😊</button>
+        <button onclick="selectEmotion('sad', 'room1')">😢</button>
+        <button onclick="selectEmotion('angry', 'room1')">😡</button>
+        <button onclick="selectEmotion('love', 'room1')">❤️</button>
+    </div>
+    <div id="entries"></div>
+    <div class="message-container">
+        <textarea id="message-input" placeholder="nhập tâm sự cụa bbi ọ dayy" onkeypress="handleKeyPress(event, 'room1')"></textarea>
+        <button onclick="sendMessage('room1')">tâm sự</button>
+    </div>
+    <button class="room-button exit" onclick="goToHomePage()">ra ngoài phòng khách</button>
+    <script src="script.js"></script>
+</body>
+</html>
+

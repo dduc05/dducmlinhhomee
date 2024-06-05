@@ -1,0 +1,239 @@
+body {
+    font-family: 'Aptos', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    background-size: cover;
+    transition: background 0.5s ease-in-out; /* Smooth background transition */
+}
+
+#login-container {
+    margin: 100px auto;
+}
+
+#login-container input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 25px; /* Oval shape */
+    background-color: white; /* Background color for the input */
+    color: black; /* Text color for the input */
+    outline: none;
+    box-shadow: none;
+}
+
+#login-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px; /* Oval shape */
+    background-color: pink;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out; /* Smooth background color transition */
+}
+
+#login-container button:hover {
+    background-color: #ff69b4; /* A slightly darker pink on hover */
+}
+
+.title {
+    font-family: 'Baskerville', serif;
+    font-size: 48px;
+    color: white;
+    margin-top: 20px;
+    text-shadow: 2px 2px 4px #000000; /* Adding shadow for better visibility */
+}
+
+#days-count-container {
+    margin-top: 50px;
+}
+
+.subtext {
+    font-family: 'Bodoni 72', serif;
+    font-size: 24px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000; /* Adding shadow for better visibility */
+}
+
+#days-count {
+    font-family: 'Bodoni 72', serif;
+    font-size: 100px; /* Increased size */
+    color: white;
+    text-shadow: 2px 2px 4px #000000; /* Adding shadow for better visibility */
+}
+
+#days-count span {
+    font-size: 24px; /* Same size as .subtext */
+}
+
+#emotion-select {
+    margin-bottom: 20px;
+}
+
+#emotion-select button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+    transition: transform 0.3s ease-in-out; /* Smooth transform transition */
+}
+
+#emotion-select button:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+#access-buttons {
+    margin-top: 20px;
+}
+
+.room-button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000; /* Adding shadow for better visibility */
+    transition: background-color 0.3s ease-in-out; /* Smooth background color transition */
+}
+
+.room-button.pink {
+    background-color: pink;
+}
+
+.room-button.pink:hover {
+    background-color: #ff69b4; /* A slightly darker pink on hover */
+}
+
+.room1 {
+    background: url('IMG_6268.JPG') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.room2 {
+    background: url('IMG_6273.JPG') no-repeat center center fixed;
+    background-size: cover;
+}
+
+textarea {
+    width: 60%;
+    height: 50px;
+    margin-top: 20px;
+    font-family: 'Century Schoolbook', serif;
+    border-radius: 25px; /* Oval shape */
+    padding: 10px;
+}
+
+.message-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#entries {
+    margin-top: 20px;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 80%;
+    margin: 20px auto;
+    max-height: 400px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column-reverse; /* Display messages from bottom to top */
+}
+
+.entry {
+    background-color: rgba(255, 255, 255, 0.8); /* Light translucent white */
+    color: black;
+    border-radius: 20px;
+    padding: 10px 15px;
+    display: inline-block;
+    margin: 5px 0;
+    max-width: 70%;
+    word-wrap: break-word;
+    position: relative;
+}
+
+.timestamp {
+    font-size: 12px;
+    color: gray;
+    display: block;
+    text-align: right;
+    margin-top: 5px;
+    margin-bottom: 5px; /* Adjust as needed */
+}
+
+.room-title {
+    font-family: 'Bodoni 72', serif;
+    font-size: 36px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000; /* Adding shadow for better visibility */
+}
+
+.options-button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: gray;
+    transition: transform 0.3s ease-in-out; /* Smooth transform transition */
+}
+
+.options-button:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+.options-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 10px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.options-menu button {
+    display: block;
+    width: 100%;
+    padding: 5px 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out; /* Smooth background color transition */
+}
+
+.options-menu button:hover {
+    background: #f0f0f0;
+}
+
+/* New styles for "ra ngoài phòng khách" button */
+.room-button.exit {
+    margin-top: 10px;
+    background-color: lightpink;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    transition: background-color 0.3s ease-in-out; /* Smooth background color transition */
+}
+
+.room-button.exit:hover {
+    background-color: #ff69b4; /* A slightly darker pink on hover */
+}
+
+/* Add transition effect */
+body {
+    transition: background 0.5s ease-in-out;
+}
+
+button, input, textarea {
+    transition: all 0.3s ease-in-out;
+}
+
